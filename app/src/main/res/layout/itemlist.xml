@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/nameRepository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RepositoryName"
+            android:textSize="@dimen/languageRepositorySize"
+            android:textColor="@color/colorTextNameRepository"
+            android:layout_marginTop="@dimen/itemListMargin"
+            android:layout_marginLeft="@dimen/itemListMargin"
+    />
+    <TextView
+            android:id="@+id/languageRepository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RepositoryLanguage"
+            android:textSize="@dimen/languageRepositorySize"
+            android:layout_marginBottom="@dimen/itemListMargin"
+            android:layout_marginTop="@dimen/margintopItemofItem"
+            android:layout_marginLeft="@dimen/itemListMargin"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTextNameRepository"
+            android:focusable="false" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context=".views.PersonDataActivity">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/backgroundTolbar"
+            android:layout_weight="1.8">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarPersonActivty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundTolbarPerson"
+                tools:ignore="MissingConstraints">
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView android:id="@+id/imageUser"
+                   android:layout_width="@dimen/imageSize"
+                   android:layout_height="@dimen/imageSize"
+                   android:layout_gravity="center"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   android:layout_marginEnd="@dimen/imgMarginEndStart"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:layout_marginStart="@dimen/imgMarginEndStart"
+                   android:layout_marginBottom="@dimen/imgMarginBottom"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:id="@+id/nameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NomeUsuario"
+                android:textColor="@color/titleTolbar"
+                android:textSize="@dimen/nameRepositorySize"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/textNomeUserMargin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="@dimen/textNomeUserMargin"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/textNomeUserMargin"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/textNomeUserMarginTop"
+                app:layout_constraintTop_toBottomOf="@+id/imageUser"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

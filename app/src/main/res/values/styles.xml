@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppThemeNoBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/buttonSearchBackground</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/buttonSearchBackground</item>
+    </style>
+    <dimen name="buttonSearchTopMargin">40dp</dimen>
+    <dimen name="buttonSearchWidth">100dp</dimen>
+    <dimen name="buttonSearchHeigth">30dp</dimen>
+    <dimen name="buttonSearchTextSize">10dp</dimen>
+    <dimen name="toolbarTitleTextSize">20dp</dimen>
+    <dimen name="nameRepositorySize">25dp</dimen>
+    <dimen name="languageRepositorySize">20dp</dimen>
+    <dimen name="imageSize">160dp</dimen>
+    <dimen name="imgMarginEndStart">8dp</dimen>
+    <dimen name="imgMarginBottom">40dp</dimen>
+    <dimen name="textNomeUserMargin">8dp</dimen>
+    <dimen name="textNomeUserMarginTop">24dp</dimen>
+    <dimen name="itemListMargin">10dp</dimen>
+    <dimen name="margintopItemofItem">5dp</dimen>
+    <dimen name="searchEditLD">5dp</dimen>
+    <dimen name="SearchEditTop">200dp</dimen>
+
+
+</resources>
